@@ -5,7 +5,8 @@ import java.awt.*;
 
 public class Main {
 
-    JFrame frame = new JFrame("Basket lag");
+    private JFrame frame = new JFrame("Basket lag");
+    private JLabel name = new JLabel();
 
 
     public static void main(String[] args) {
@@ -20,13 +21,15 @@ public class Main {
 
     public void execute(){
 
-        frame.add(new choseTeam1(), BorderLayout.WEST);
-        frame.add(new choseTeam2(), BorderLayout.EAST);
+        frame.add(name, BorderLayout.NORTH);
+        frame.add(new ChoseTeamPanel(), BorderLayout.CENTER);
+
+        name.setText("Basket");
+        name.setFont(new Font("Ink Free", Font.BOLD, 60));
 
         frame.setBounds(100, 100, 900, 700); // Sets the size of the frame
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
 
     }
 }

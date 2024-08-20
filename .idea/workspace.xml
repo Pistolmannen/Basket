@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c70d2977-fbb3-4483-9ce0-e0f9d535e7b9" name="Changes" comment="test commit">
-      <change afterPath="$PROJECT_DIR$/src/choseTeam1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/choseTeam2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChoseTeamPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/choseTeam1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChoseTeam1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/choseTeam2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChoseTeam2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Main" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,7 +56,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "team-chosing-panel",
+    "git-widget-placeholder": "adding-name-of-program-to-chosing-team",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/ErikGustafsson/IdeaProjects/Basket/src/Main.java"
   }
@@ -79,6 +80,17 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test commit" />
