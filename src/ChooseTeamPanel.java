@@ -1,14 +1,12 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class ChoseTeamPanel extends JPanel {
+public class ChooseTeamPanel extends JPanel {
     private Dimension panelSize = new Dimension(200, 300);
-    private ChoseTeam1 homeTeam = new ChoseTeam1();
-    private ChoseTeam2 awayTeam = new ChoseTeam2();
+    private DisplayTextFilePanel homeTeam = new DisplayTextFilePanel("Välj hemmalag!", Color.GREEN);
+    private DisplayTextFilePanel awayTeam = new DisplayTextFilePanel("Välj bortalag!", Color.RED);
 
-    public ChoseTeamPanel(){
+    public ChooseTeamPanel(){
         // Sets the dimensions on the panels
         homeTeam.setPreferredSize(panelSize);
         awayTeam.setPreferredSize(panelSize);

@@ -4,7 +4,7 @@ public class MainTest {
 
     public static void main(String[] args) throws IOException{
 
-        String fileName = "C:\\Users\\ErikGustafsson\\IdeaProjects\\Basket/Testnamn.txt"; // vägen till filen
+        String fileName = "C:\\Users\\emilj\\Documents/Testnamn.txt"; // vägen till filen
 
         try {
             ReadFile file = new ReadFile(fileName);
