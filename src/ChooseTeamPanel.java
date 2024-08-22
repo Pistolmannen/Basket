@@ -5,8 +5,8 @@ public class ChooseTeamPanel extends JPanel {
     private Dimension panelSize = new Dimension(200, 300); // Sets the dimensions on the panels
 
     // Creates the team buttons
-    private DisplayTextFilePanel homeTeam = new DisplayTextFilePanel("Choose hometeam!", Color.GREEN);
-    private DisplayTextFilePanel awayTeam = new DisplayTextFilePanel("Choose awayteam!", Color.RED);
+    private DisplayTextFilePanel homeTeam = new DisplayTextFilePanel("Choose home team!", Color.GREEN);
+    private DisplayTextFilePanel awayTeam = new DisplayTextFilePanel("Choose away team!", Color.RED);
 
     public ChooseTeamPanel(){
         // Adds the dimensions to the panels
