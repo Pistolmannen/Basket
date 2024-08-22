@@ -12,7 +12,7 @@ public class Main {
 
     public void execute(){
         frame.add(label, BorderLayout.NORTH); // Adds the label to the frame
-        frame.add(new ChoseTeamPanel(), BorderLayout.CENTER); // Adds the panel that holds the teams to the frame
+        frame.add(new ChooseTeamPanel(), BorderLayout.CENTER); // Adds the panel that holds the teams to the frame
         frame.setBounds(100, 100, 900, 700); // Sets the size of the frame
         //frame.pack(); // Sets the window to match a certain size
         frame.setVisible(true); // Sets the window to be visible and in focus
