@@ -8,7 +8,6 @@ import java.io.IOException;
 public class DisplayTextFilePanel extends JPanel implements ActionListener {
 
     private JButton loadTeam = new JButton();
-    //private PlayerPanel playerPanel;
 
     public DisplayTextFilePanel(String buttonTitle, Color color){
         this.setBackground(color); // Sets the background color on the panels

@@ -15,7 +15,6 @@ public class Player extends JPanel {
         label.setBackground(Color.BLUE);
 
         label.setText(info);
-        //label.setFont(new Font("Ink Free", Font.BOLD, 10));
         chosePlayer.setText("Choose");
 
         center.add(label, BorderLayout.EAST);

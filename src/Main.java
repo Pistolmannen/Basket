@@ -20,6 +20,6 @@ public class Main {
 
         // Creates rubric and sets a font
         label.setText("Basket");
-        label.setFont(new Font("Ink Free", Font.BOLD, 60));
+        label.setFont(new Font("Ink Free", Font.BOLD, 50));
     }
 }
