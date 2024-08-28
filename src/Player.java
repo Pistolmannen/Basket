@@ -1,28 +1,26 @@
-public class Player {
+import javax.swing.*;
+import java.awt.*;
 
-    private String name;
-    private int playerNumber;
+public class Player extends JPanel {
 
-    public Player(String name, int playerNumber){
-        this.name = name;
-        this.playerNumber = playerNumber;
-    }
+    private String info;
+    private JLabel label = new JLabel();
+    private JButton chosePlayer = new JButton();
+    private JPanel center = new JPanel();
 
-    // get funtions for players
-    public String getName() {
-        return name;
-    }
+    public Player(String info) {
+        this.info = info;
 
-    public int getPlayerNumber() {
-        return playerNumber;
-    }
+        this.setBackground(Color.BLUE);
+        label.setBackground(Color.BLUE);
 
-    // set funtions for players
-    public void setName(String name) {
-        this.name = name;
-    }
+        label.setText(info);
+        //label.setFont(new Font("Ink Free", Font.BOLD, 10));
+        chosePlayer.setText("Choose");
 
-    public void setPlayerNumber(int playerNumber) {
-        this.playerNumber = playerNumber;
+        center.add(label, BorderLayout.EAST);
+        center.add(chosePlayer, BorderLayout.WEST);
+        add(center);
     }
 }
+
