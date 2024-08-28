@@ -1,6 +1,6 @@
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
-import java.awt.Color;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
@@ -8,12 +8,13 @@ import java.io.IOException;
 public class DisplayTextFilePanel extends JPanel implements ActionListener {
 
     private JButton loadTeam = new JButton();
+    //private PlayerPanel playerPanel;
 
     public DisplayTextFilePanel(String buttonTitle, Color color){
         this.setBackground(color); // Sets the background color on the panels
         loadTeam.setText(buttonTitle); // Sets the right title on the buttons
         loadTeam.addActionListener(this); // Adds action listeners on the buttons
-        this.add(loadTeam); // Adds the buttons to the panels
+        this.add(loadTeam, BorderLayout.NORTH); // Adds the buttons to the panels
     }
 
     // Listens to when a button is pressed
@@ -33,6 +34,13 @@ public class DisplayTextFilePanel extends JPanel implements ActionListener {
                 try {
                     ReadFile file = new ReadFile(chooser.getSelectedFile().getAbsolutePath());
                     String[] arrayLines = file.openFile(); // Saves all the lines from the chosen file
+                    PlayerPanel playerPanel = new PlayerPanel(arrayLines);
+                    this.add(playerPanel, BorderLayout.CENTER);
+
+                    // Updates the panel with playerPanel
+                    this.revalidate();
+                    this.repaint();
+
                 }
                 catch (IOException a) {
                     System.out.println( a.getMessage() );
